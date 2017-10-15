@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd 
+
+">
+<struts>
+
+	<package name="com" namespace="/" extends="struts-default">
+        <action name="BMS" class="com.helloAction">
+            <result>/login.jsp</result>
+        </action>
+        
+        <action name="searchAction" class="com.showWroteBookAction">
+            <result name="success">/showwrotebook.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        
+		<action name="delete" class="com.deleteAction">
+            <result >/login.jsp</result>
+        </action>
+        
+        <action name="show" class="com.detailAction">
+            <result name="success">/detail.jsp</result>
+        </action>
+        
+        <action name="back" class="com.helloAction">
+            <result name="success">/login.jsp</result>
+        </action>
+        
+        <action name="error" class="com.helloAction">
+            <result name="success">/login.jsp</result>
+        </action>
+        
+    </package>
+    
+
+</struts>
